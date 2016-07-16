@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/weixin_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="400-823-823"
+        android:textColor="#01aef1"
+        android:textSize="40sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/qq_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="400-823-823"
+        android:textColor="#01aef1"
+        android:textSize="40sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/sina_weibo_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="400-823-823"
+        android:textColor="#01aef1"
+        android:textSize="40sp" >
+    </TextView>
+
+
+</LinearLayout>

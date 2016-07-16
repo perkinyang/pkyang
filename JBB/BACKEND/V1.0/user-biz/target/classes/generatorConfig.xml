@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" 
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+	<context id="MysqlTables" targetRuntime="MyBatis3">
+		<plugin type="com.jbb.util.PaginationPlugin"></plugin>
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://139.196.21.15:3306/jbb_test" userId="jbb_test"
+			password="Jbb@123961">
+		</jdbcConnection>
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<javaModelGenerator targetPackage="com.jbb.user.biz.entity"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="config.sqlmap"
+			targetProject="src/main/resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.jbb.user.biz.mapper" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+
+
+
+
+<!-- 		<table schema="jbb" tableName="jbb_category" domainObjectName="Category">
+		</table>
+
+		<table schema="jbb" tableName="jbb_intention" domainObjectName="Intention">
+		</table>
+ <table schema="jbb" tableName="jbb_order_status_flow"
+			domainObjectName="OrderStatusFlow">
+		</table>
+
+		<table schema="jbb" tableName="expert_user_info"
+			domainObjectName="ExpertUserInfo">
+		</table>
+		<table schema="jbb" tableName="expert_login" domainObjectName="ExpertLogin">
+		</table>
+
+ -->
+		
+		 <table schema="jbb" tableName="jbb_resource" 
+			domainObjectName="JbbResource">
+			<generatedKey column="id" sqlStatement="MySql" identity="true"/>
+		</table>
+		
+	<!-- 	 <table schema="jbb" tableName="jbb_business" 
+			domainObjectName="Business">
+			<generatedKey column="id" sqlStatement="MySql" identity="true"/>
+		</table> -->
+		
+
+	</context>
+
+
+</generatorConfiguration> 

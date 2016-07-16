@@ -1,0 +1,3 @@
+com\account\provider\biz\entity\Company.class
+com\account\provider\biz\service\CompanyServiceImpl.class
+com\account\provider\biz\dao\CompanyDao.class

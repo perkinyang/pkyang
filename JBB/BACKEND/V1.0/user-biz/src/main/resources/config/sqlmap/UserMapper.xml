@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jbb.user.biz.dao.UserDao">
+
+    <sql id="Base_Column_List">
+        id, company_name as companyName,contacts,telephone,email,sex,industry,industry_name as industryName,province_code as provinceCode,province_name as provinceName,
+        city_code as cityCode,city_name as cityName,area_code as areaCode,area_name as areaName,street_code as streetCode,
+        street_name as streetName,address,user_type as userType,user_login_id as userLoginId
+    </sql>
+
+    <select id="getById" resultType="com.jbb.user.api.dto.UserDTO" parameterType="map">
+        select  <include refid="Base_Column_List" />
+        from  jbb_user_info where id = #{id}
+    </select>
+    
+    <insert id="save" parameterType="com.jbb.user.api.dto.UserDTO" useGeneratedKeys="true" keyProperty="entity.id" >
+        INSERT INTO jbb_user_info
+        (
+          company_name,
+          contacts,
+          telephone,
+          email,
+          sex,
+          industry,
+          industry_name,
+          province_code,
+          province_name,
+        city_code,
+        city_name,
+        area_code,
+        area_name,
+        street_code,
+        street_name,
+        address,
+        user_type,
+        create_time,
+        user_login_id
+        )
+        VALUES
+        (
+          #{entity.companyName},
+          #{entity.contacts},
+          #{entity.telephone},
+          #{entity.email},
+          #{entity.sex},
+          #{entity.industry},
+          #{entity.industryName},
+          #{entity.provinceCode},
+          #{entity.provinceName},
+          #{entity.cityCode},
+          #{entity.cityName},
+          #{entity.areaCode},
+          #{entity.areaName},
+          #{entity.streetCode},
+          #{entity.streetName},
+          #{entity.address},
+          #{entity.userType},
+          now(),
+          #{entity.userLoginId}         
+        )
+
+    </insert>
+    
+    <update id="updateByTelephone" parameterType="map">
+        update jbb_user_info set company_name= #{entity.companyName},contacts = #{entity.contacts},telephone = #{entity.telephone},
+          email = #{entity.email},sex= #{entity.sex},industry= #{entity.industry},industry_name= #{entity.industryName},
+          province_code=#{entity.provinceCode},province_name=#{entity.provinceName},city_code=#{entity.cityCode},city_name=#{entity.cityName},
+          area_code=#{entity.areaCode},area_name=#{entity.areaName},street_code=#{entity.streetCode},street_name=#{entity.streetName},
+          address= #{entity.address},user_type= #{entity.userType}
+        where telephone= #{entity.telephone}
+    </update>
+    
+    <select id="findByTelephone" resultType="com.jbb.user.api.dto.UserDTO" parameterType="map">
+        select  <include refid="Base_Column_List" />
+        from  jbb_user_info where telephone = #{telephone}
+    </select>
+    
+    
+
+</mapper>

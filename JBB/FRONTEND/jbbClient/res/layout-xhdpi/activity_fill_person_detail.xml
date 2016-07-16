@@ -1,0 +1,301 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebebeb"
+        android:orientation="vertical" >
+ 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f7f7f7"
+            android:padding="10sp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="完善资料"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+         
+        <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:background="#ffffff">
+            <TextView
+                android:id="@+id/fill_person_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="15sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"  />
+             <TextView
+                android:id="@+id/fill_person_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="15sp" 
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" 
+                android:drawableLeft="@drawable/icon_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:background="#ffffff">
+            <View
+                android:id="@+id/fill_person_company_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/icon_current"
+                android:gravity="center_horizontal"/>
+             <View
+                android:id="@+id/fill_person_private_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                 android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/icon_current_white"
+                android:gravity="center_horizontal"/>
+            
+        </LinearLayout>
+		<View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"/>
+        <LinearLayout
+            android:id="@+id/detail_company_name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <EditText
+                android:id="@+id/detail_company_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputlayout2"
+                android:hint="请输入所在公司全称"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5sp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <EditText
+                android:id="@+id/detail_contacts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputlayout2"
+                android:hint="请输入联系人姓名"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5sp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <EditText
+                android:id="@+id/detail_telephone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputlayout2"
+                android:hint="请输入大陆11位手机号"
+                android:inputType="phone"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5sp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <EditText
+                android:id="@+id/detail_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputlayout2"
+                android:hint="请输入邮箱地址"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5sp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <EditText
+                android:id="@+id/detail_sex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputlayout2"
+                android:hint="请选择性别"
+                android:focusable="false"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+             android:id="@+id/detail_industry_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5sp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <EditText
+                android:id="@+id/detail_industry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputlayout2"
+                android:focusable="false"
+                android:hint="请选择所属行业"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5sp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <EditText
+                android:id="@+id/detail_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputlayout2"
+                android:hint="请选择所在地"
+                android:focusable="false"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5sp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <EditText
+                android:id="@+id/detail_street"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputlayout2"
+                android:hint="请选择所属街道"
+                android:focusable="false"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5sp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <EditText
+                android:id="@+id/detail_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputlayout2"
+                android:hint="请输入详细地址"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5sp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <TextView
+                android:id="@+id/detail_save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_submit"
+                android:gravity="center"
+                android:paddingBottom="10sp"
+                android:paddingTop="10sp"
+                android:text="保存"
+                android:textColor="#ffff"
+                android:textSize="18sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

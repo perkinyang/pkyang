@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/top_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_retrn"
+            android:gravity="center_vertical"
+            android:text="  地区选择"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/area_select_province"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebebeb"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="#cccccc" />
+
+    <TextView
+        android:id="@+id/area_select_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebebeb"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:textSize="15sp" />
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="#cccccc" />
+    <ListView
+        android:id="@+id/select_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="#ffffff">
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_nav"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:background="#ebebeb" />
+
+    <RelativeLayout
+        android:id="@+id/tel_select"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/first_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView     
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_select"
+            android:text="  选号"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/icon_check"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="#ebebeb" />
+	<RelativeLayout
+        android:id="@+id/tel_charge"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/first_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_recharge"
+            android:text="  充值"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/icon_check"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="#ebebeb" />
+	
+	<RelativeLayout
+        android:id="@+id/tel_additional"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/first_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView     
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_additional"
+            android:text="  附加功能"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/icon_check"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="#ebebeb" />
+	<RelativeLayout
+        android:id="@+id/tel_value_added"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/first_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView     
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_increment"
+            android:text="  增值服务"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/icon_check"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+	
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#ebebeb" />
+	
+	<RelativeLayout
+        android:id="@+id/tel_introduction"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/first_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_explain"
+            android:text="  400电话介绍"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/icon_check"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#ebebeb" />
+</LinearLayout>

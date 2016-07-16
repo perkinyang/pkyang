@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_nav" />
+
+    <ImageView
+        android:id="@+id/imglogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_banner" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#ebebeb" />
+     
+     <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="400-823-823"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:inputType="phone"
+            android:background="@drawable/inputlayout2"/>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="#ebebeb" />
+      <EditText
+            android:id="@+id/selfCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:hint="输入自定义金额"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:background="@drawable/inputlayout2"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="#ebebeb" />
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginTop="8dp">
+        <Button
+            android:id="@+id/tel_400_charge_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥100.00"
+            android:tag="100"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:focusable="true"
+            android:background="@drawable/charge_selector_bg"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+        <Button
+            android:id="@+id/tel_400_charge_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥300.00"
+            android:tag="300"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:background="@drawable/charge_selector_bg"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+        <Button
+            android:id="@+id/tel_400_charge_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥500.00"
+            android:tag="500"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/charge_selector_bg"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginTop="8dp">
+        <Button
+            android:id="@+id/tel_400_charge_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥1000.00"
+            android:tag="1000"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/charge_selector_bg"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+        <Button
+            android:id="@+id/tel_400_charge_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥3000.00"
+            android:tag="3000"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:background="@drawable/charge_selector_bg"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+        <Button
+            android:id="@+id/tel_400_charge_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥5000.00"
+            android:tag="5000"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/charge_selector_bg"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#ebebeb" />
+        
+    
+    <TextView
+            android:id="@+id/tel_400_charge_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_submit"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:text="充值"
+            android:textColor="#ffff"
+            android:textSize="18sp" >
+        </TextView>
+	
+</LinearLayout>

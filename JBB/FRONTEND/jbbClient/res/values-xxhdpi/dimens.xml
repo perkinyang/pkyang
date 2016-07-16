@@ -1,0 +1,16 @@
+<resources>
+
+    <dimen name="first_title">48dp</dimen>
+	<dimen name="split_large">8dp</dimen>
+	<dimen name="submit_btn">48dp</dimen>
+	<dimen name="submit_size">18sp</dimen>
+	<dimen name="globle_margin">8dp</dimen>
+	<dimen name="common_padding">8dp</dimen>
+	<dimen name="common_margin">8dp</dimen>
+	<dimen name="desc">12sp</dimen>
+	<dimen name="split_line">0.5dp</dimen>
+	<dimen name="split_block">8dp</dimen>
+	<dimen name="multi_margin">5dp</dimen>
+	<dimen name="middle_margin">5dp</dimen>
+	<dimen name="common_submit_margin_top">10dp</dimen>
+</resources>

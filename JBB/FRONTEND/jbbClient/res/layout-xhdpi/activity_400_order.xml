@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/top_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_retrn"
+            android:gravity="center_vertical"
+            android:text="  下单"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#ebebeb" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="400-823-823"
+        android:textColor="#01aef1"
+        android:textSize="40sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="服务年限"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/tel_400_order_sub_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="年"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+  
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#ebebeb" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="语音导航"
+        android:textSize="15sp"
+        android:layout_margin="3dp"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="￥58元"
+        android:textSize="15sp"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="注:语音导航(增值服务)第一年免费哦"
+        android:textSize="15sp"
+        android:textColor="#ff5719"
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥716元"
+            android:textSize="15sp"
+            android:textColor="#ff5719" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/detail_400_order_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/tel_400_order"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="确定"
+            android:textColor="#ffff"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/detail_400_order_intent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/detail_400_order_submit"
+            android:background="@drawable/tel_400_order_intent"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="取消"
+            android:textColor="#ffff"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

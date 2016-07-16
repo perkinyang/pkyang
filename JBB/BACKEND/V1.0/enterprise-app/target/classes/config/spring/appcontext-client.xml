@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/context  
+      http://www.springframework.org/schema/context/spring-context-3.1.xsd ">
+
+	<!-- <dubbo:application name="enterprise_app" /> <dubbo:registry protocol="multicast" 
+		address="224.5.6.7:10245" /> <dubbo:reference id="companyService" interface="com.jbb.user.api.service.CompanyService" 
+		/> -->
+
+
+	<context:component-scan base-package="com.jbb.user"></context:component-scan>
+
+	<bean id="userInfoService" class="com.jbb.user.biz.service.impl.UserInfoServiceImpl" />
+
+	<bean id="commonService" class="com.jbb.user.biz.service.impl.CommonServiceImpl" />
+
+	<bean id="userLoginService" class="com.jbb.user.biz.service.impl.UserLoginServiceImpl" />
+
+	<bean id="orderService" class="com.jbb.user.biz.service.impl.OrderServiceImpl" />
+
+	<bean id="number400Service" class="com.jbb.user.biz.service.impl.Number400ServiceImpl" />
+
+	<bean id="companyService" class="com.jbb.user.biz.service.impl.CompanyServiceImpl" />
+
+	
+
+</beans>

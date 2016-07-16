@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">   
+	
+	<!-- <dubbo:application name="enterprise_app" />
+	
+	<dubbo:registry protocol="multicast" address="224.5.6.7:10245" />
+	
+	<dubbo:reference id="companyService" interface="com.jbb.user.api.service.CompanyService" /> -->
+	
+	<bean id="cityService" class="com.jbb.user.center.biz.service.CityServiceImpl" />
+	
+	<bean id="userLoginService" class="com.jbb.user.center.biz.service.UserLoginServiceImpl" />
+	
+	<bean id="findAccountantService" class="com.jbb.account.order.biz.service.FindAccountantServiceImpl" />
+
+    <bean id="findCompanyService" class="com.jbb.account.order.biz.service.FindCompanyServiceImpl" />
+
+    <bean id="orderService" class="com.jbb.account.order.biz.service.OrderServiceImpl" />
+    
+    <bean id="companyService" class="com.account.provider.biz.service.CompanyServiceImpl" />
+    
+    
+</beans>

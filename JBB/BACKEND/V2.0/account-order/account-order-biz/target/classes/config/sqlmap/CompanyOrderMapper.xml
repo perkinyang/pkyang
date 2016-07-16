@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jbb.account.order.biz.dao.CompanyOrderDao">
+
+    <sql id="Base_Column_List">
+          id,
+          create_time as createTime,
+          company_name as companyName,
+          company_id as companyId,
+          telephone,
+          status,
+          start_month as startMonth,
+          duration_month as durationMonth,
+          apply_type as applyType,
+          month_price as monthPrice,
+          service_type as serviceType,
+          amount_price as amountPrice,
+          remark,
+          update_time as updateTime,
+          order_type as orderType,
+          service_telephone as serviceTelephone
+    </sql>
+
+    <select id="findById" resultType="com.jbb.account.order.api.dto.OrderDetailDTO" parameterType="map">
+        select  <include refid="Base_Column_List" />
+        from  company_order where id = #{orderId}
+    </select>
+    
+    <insert id="save" parameterType="com.jbb.account.order.biz.entity.Order">
+
+        INSERT INTO company_order
+        (
+          create_time,
+          company_name,
+          company_id,
+          telephone,
+          start_month,
+          duration_month,
+          apply_type,
+          month_price,
+          service_type,
+          amount_price,
+          remark,
+          order_type,
+          service_telephone
+        )
+        VALUES
+        (
+          #{entity.createTime},
+          #{entity.companyName},
+          #{entity.companyId},
+          #{entity.telephone},
+          #{entity.startMonth},
+          #{entity.durationMonth},
+          #{entity.applyType},
+          #{entity.monthPrice},
+          #{entity.serviceType},
+          #{entity.amountPrice},
+          #{entity.remark},
+          #{entity.orderType},
+          #{entity.serviceTelephone}
+        )
+
+    </insert>
+    
+    <select id="findOrderList" resultType="com.jbb.account.order.api.dto.OrderDTO" parameterType="map">
+        select  <include refid="Base_Column_List" />
+        from  company_order where telephone = #{telephone} and update_time > #{requestTime} and start_month > #{startMonth}
+        <if test="status != null and status.length >0">
+            and status IN
+            <foreach collection="status" item="item" open="(" separator="," close=")">
+            #{item}
+          </foreach>
+        </if>
+    </select>
+    
+    
+     <select id="findLatestOrder" resultType="com.jbb.account.order.api.dto.OrderDetailDTO" parameterType="map">
+        select  <include refid="Base_Column_List" />
+        from  company_order where telephone = #{telephone} order by id desc limit 0,1
+    </select>
+    
+    
+
+</mapper>

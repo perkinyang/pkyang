@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:background="#ebebeb" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="7dp"
+                android:text="已知晓并同意400呼叫中心平台协议" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/gray_border_layout"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="查看协议"
+                android:textColor="#999999" >
+            </TextView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#ebebeb" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_position"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/detail_400_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/tel_400_order"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="立即下单"
+                android:textColor="#ffff"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/detail_400_order_intent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/detail_400_order"
+                android:background="@drawable/tel_400_order_intent"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="提交意向"
+                android:textColor="#ffff"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/detail_400_order_custome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/detail_400_order_intent"
+                android:background="@drawable/tel_400_order_custome"
+                android:drawableLeft="@drawable/icon_mantissa1"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text=" 客服"
+                android:textColor="#525252"
+                android:textSize="18sp" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_nav" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:background="#ebebeb" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="fill_parent"
+            android:layout_height="87dp"
+            android:gravity="center"
+            android:text="400-823-823"
+            android:textColor="@color/blue"
+            android:textSize="40sp" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5sp"
+            android:background="#ebebeb" />
+
+        <TextView
+            android:id="@+id/combo_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="精选套餐"
+            android:textColor="@color/blue" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/combo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/combo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:background="#ebebeb" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="免费附加功能"
+            android:textColor="@color/blue" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5sp"
+            android:background="#ebebeb" />
+
+        <com.top.jbb.view.FlowLayout
+            android:id="@+id/addtional_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+        </com.top.jbb.view.FlowLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:background="#ebebeb" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="免费增值服务"
+            android:textColor="@color/blue" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#ebebeb" />
+
+        <com.top.jbb.view.FlowLayout
+            android:id="@+id/add_value_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+        </com.top.jbb.view.FlowLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5sp"
+            android:background="#ebebeb" />
+    </LinearLayout>
+
+</RelativeLayout>

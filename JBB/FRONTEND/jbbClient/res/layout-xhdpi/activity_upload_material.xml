@@ -1,0 +1,163 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_nav" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/split_large"
+            android:background="@color/split_view_common" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/common_padding" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="营业执照" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingBottom="@dimen/common_padding"
+                android:paddingTop="@dimen/common_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_add" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="请将营业执照拍照或扫描后上传"
+                android:textColor="@color/desc"
+                android:textSize="@dimen/desc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/split_large"
+            android:background="@color/split_view_common" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/common_padding" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="组织机构代码证" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingBottom="@dimen/common_padding"
+                android:paddingTop="@dimen/common_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_add" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="请将组织机构代码证拍照或扫描后上传"
+                android:textColor="@color/desc"
+                android:textSize="@dimen/desc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/split_large"
+            android:background="@color/split_view_common" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/common_padding" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="银行开启证明" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingBottom="@dimen/common_padding"
+                android:paddingTop="@dimen/common_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_add" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="请将银行开启证明拍照或扫描后上传"
+                android:textColor="@color/desc"
+                android:textSize="@dimen/desc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/split_large"
+            android:background="@color/split_view_common" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/common_padding" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="法人代表身份证" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingBottom="@dimen/common_padding"
+                android:paddingTop="@dimen/common_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_add" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="请将法人代表身份证拍照或扫描后上传"
+                android:textColor="@color/desc"
+                android:textSize="@dimen/desc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/split_large"
+            android:background="@color/split_view_common" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/submit_btn"
+            android:layout_margin="@dimen/common_margin"
+            android:layout_marginTop="@dimen/common_submit_margin_top"
+            android:background="@drawable/common_submit"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/submit_size" >
+        </TextView>
+    </LinearLayout>
+
+</ScrollView>

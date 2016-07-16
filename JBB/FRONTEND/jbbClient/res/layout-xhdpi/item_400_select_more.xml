@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+            android:id="@+id/item_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2222222222"
+            android:textSize="15sp" 
+            android:gravity="center"
+            android:padding="7dp"
+            android:textColor="#646464"
+            android:background="@drawable/selector_bg"/>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/nav_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/top_return"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/icon_retrn"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:text="  400增值业务"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_view_color" />
+
+</LinearLayout>

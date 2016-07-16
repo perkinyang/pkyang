@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:padding="6dp" >
+        <TextView
+            android:id="@+id/top_return"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_retrn"
+            android:gravity="center_vertical"
+            android:text="  AAAA"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <com.top.jbb.view.pullpush.PullToRefreshListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:listSelector="@android:color/transparent"
+        android:divider="#ffffff" >
+    </com.top.jbb.view.pullpush.PullToRefreshListView>
+</LinearLayout>

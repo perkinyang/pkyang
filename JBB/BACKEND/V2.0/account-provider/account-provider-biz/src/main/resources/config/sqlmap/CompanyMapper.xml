@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.account.provider.biz.dao.CompanyDao">
+
+    <sql id="Base_Column_List">
+        id, contacts,telephone,email,company_name as companyName,industry,province,city,district,address,create_time as createTime,
+        update_time as updateTime,apply_type as applyType,company_type as companyType
+    </sql>
+
+    <select id="getById" resultType="com.account.provider.api.dto.CompanyDTO" parameterType="map">
+        select  <include refid="Base_Column_List" />
+        from  company where id = #{id}
+    </select>
+    
+    <insert id="save" parameterType="com.account.provider.biz.entity.Company" useGeneratedKeys="true" keyProperty="entity.id" >
+
+        INSERT INTO company
+        (
+          contacts,
+          telephone,
+          email,
+          company_name,
+          industry,
+          province,
+          city,
+          district,
+          address,
+          create_time,
+          apply_type,
+          company_type
+        )
+        VALUES
+        (
+          #{entity.contacts},
+          #{entity.telephone},
+          #{entity.email},
+          #{entity.companyName},
+          #{entity.industry},
+          #{entity.province},
+          #{entity.city},
+          #{entity.district},
+          #{entity.address},
+          #{entity.createTime},
+          #{entity.applyType},
+          #{entity.companyType}
+        )
+
+    </insert>
+    
+    <update id="updateByTelephone" parameterType="map">
+        update company set contacts = #{entity.contacts},
+          email = #{entity.email},
+          company_name= #{entity.companyName},
+          industry= #{entity.industry},
+          province= #{entity.province},
+          city= #{entity.city},
+          district= #{entity.district},
+          address= #{entity.address},
+          apply_type= #{entity.applyType},
+          company_type= #{entity.companyType}
+        where telephone= #{entity.telephone}
+    </update>
+    
+    <select id="findByTelephone" resultType="com.account.provider.api.dto.CompanyDTO" parameterType="map">
+        select  <include refid="Base_Column_List" />
+        from  company where telephone = #{telephone}
+    </select>
+    
+    
+
+</mapper>

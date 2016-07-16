@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jbb.user.biz.dao.FindAccountantDao">
+
+
+    <insert id="save" parameterType="com.jbb.user.biz.entity.FindAccountant" useGeneratedKeys="true" keyProperty="entity.id" >
+
+        INSERT INTO find_accountant
+        (
+          telephone,
+          contacts,
+          industry,
+          create_time,
+          province,
+          city,
+          district,
+          address,
+          login_telephone
+        )
+        VALUES
+        (
+          #{entity.telephone},
+          #{entity.contacts},
+          #{entity.industry},
+          #{entity.createTime},
+          #{entity.province},
+          #{entity.city},
+          #{entity.district},
+          #{entity.address},
+          #{entity.loginTelephone}
+        )
+
+    </insert>
+</mapper>
